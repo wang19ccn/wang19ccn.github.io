@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang19ccn.github.io/</id>
     <title>April</title>
-    <updated>2020-06-01T13:33:33.227Z</updated>
+    <updated>2020-06-01T13:35:10.922Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang19ccn.github.io/"/>
     <link rel="self" href="https://wang19ccn.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://wang19ccn.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, April</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea  你好，志祥！！]]></title>
+        <title type="html"><![CDATA[Hello Gridea ！！]]></title>
         <id>https://wang19ccn.github.io/post/hello-gridea/</id>
         <link href="https://wang19ccn.github.io/post/hello-gridea/">
         </link>

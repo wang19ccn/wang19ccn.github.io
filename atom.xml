@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang19ccn.github.io/</id>
     <title>April</title>
-    <updated>2021-07-11T17:29:55.783Z</updated>
+    <updated>2021-08-01T17:20:10.806Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang19ccn.github.io/"/>
     <link rel="self" href="https://wang19ccn.github.io/atom.xml"/>
@@ -10,6 +10,137 @@
     <logo>https://wang19ccn.github.io/images/avatar.png</logo>
     <icon>https://wang19ccn.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, April</rights>
+    <entry>
+        <title type="html"><![CDATA[Git学习笔记]]></title>
+        <id>https://wang19ccn.github.io/post/git-xue-xi-bi-ji/</id>
+        <link href="https://wang19ccn.github.io/post/git-xue-xi-bi-ji/">
+        </link>
+        <updated>2021-08-01T17:00:17.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-版本控制">一、版本控制</h3>
+<ul>
+<li>本地版本控制系统</li>
+<li>集中化版本控制系统（解决了本地版本控制系统，但会面临服务器宕机、丢失等问题）</li>
+<li>分布式版本控制系统</li>
+</ul>
+<p>###二、Git版本与配置</p>
+<p><code>git --version</code> 查看git版本信息</p>
+<p><code>git config --global user.name “username”</code> 设置名字</p>
+<p><code>git config --global user.email &quot;useremail&quot;</code>设置电子邮件</p>
+<p><code>git config -l (-list)</code> 查看配置</p>
+<h3 id="三-git文件的三种状态和工作模式">三、Git文件的三种状态和工作模式</h3>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已提交（committed）</td>
+<td>已提交表示数据已经安全的保存在本地数据中。</td>
+</tr>
+<tr>
+<td>已修改（modified）</td>
+<td>已修改表示修改了文件，但还没保存到数据库中。</td>
+</tr>
+<tr>
+<td>已暂存（staged）</td>
+<td>已暂存表示一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作区</td>
+<td>本地目录</td>
+</tr>
+<tr>
+<td>暂存区</td>
+<td></td>
+</tr>
+<tr>
+<td>Git仓库</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>基本git的工作流程描述如下：</p>
+<ul>
+<li>在工作</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210801184050860.png" alt="image-20210801184050860" loading="lazy"></figure>
+<h3 id="四-创建本地仓库与提交文件">四、创建本地仓库与提交文件</h3>
+<h5 id="初始化本地仓库">初始化本地仓库</h5>
+<p><code>git init</code> 初始化仓库</p>
+<h5 id="提交流程">提交流程</h5>
+<ol>
+<li>
+<p><code>git status</code> 查看工作目录与暂存区文件状态</p>
+</li>
+<li>
+<p><code>git add &lt;file&gt;</code>  命令添加文件到暂存区</p>
+<p><code>git rm --cached &lt;file&gt;</code> <strong>删除</strong>暂存区文件</p>
+</li>
+<li>
+<p><code>git commit -m</code> 提交信息</p>
+</li>
+</ol>
+<h5 id="查看提交记录">查看提交记录</h5>
+<p><code>git log</code> 显示提交日志信息</p>
+<h3 id="五-文件修改与提交">五、文件修改与提交</h3>
+<ol>
+<li>
+<p><code>git add .</code> 提交当前目录</p>
+</li>
+<li>
+<p><code>git commit</code> 强制输入（i - 编辑模式，esc，:wq - 保存并退出）</p>
+</li>
+<li>
+<p><code>git diff HEAD -- git01.txt</code> 对比差异</p>
+</li>
+<li>
+<p><code>git restore --staged git02.txt</code> 从暂存区<strong>撤销</strong>文件</p>
+<p><code>git reset HEAD git02.txt</code> <strong>取消上一次操作</strong></p>
+</li>
+</ol>
+<h3 id="六-版本回退-时光穿梭机">六、版本回退-时光穿梭机</h3>
+<ol>
+<li>
+<p><code>git commit -am '提交信息'</code>  添加当前目录文件并提交信息</p>
+</li>
+<li>
+<p><code>git log --pretty=oneline</code>  只展示id和信息</p>
+</li>
+<li>
+<p><code>git reset --hard HEAD^</code> 回退一个版本</p>
+<p><code>git reset --hard HEAD~2</code> 回退两次</p>
+<p><code>git reset --hard 版本号</code> （取唯一一段就行）</p>
+</li>
+<li>
+<p><code>git reflog</code> 查看所有操作历史记录</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[笔记][网站优化]23条网站性能优化建议]]></title>
+        <id>https://wang19ccn.github.io/post/bi-ji-wang-zhan-you-hua-23-tiao-wang-zhan-xing-neng-you-hua-jian-yi/</id>
+        <link href="https://wang19ccn.github.io/post/bi-ji-wang-zhan-you-hua-23-tiao-wang-zhan-xing-neng-you-hua-jian-yi/">
+        </link>
+        <updated>2021-07-12T16:23:38.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>雅虎团队的23条网站性能优化军规</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Axios拦截器]]></title>
         <id>https://wang19ccn.github.io/post/axios-lan-jie-qi/</id>

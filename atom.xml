@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang19ccn.github.io/</id>
     <title>April</title>
-    <updated>2021-08-01T19:10:27.708Z</updated>
+    <updated>2021-08-01T19:11:24.624Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang19ccn.github.io/"/>
     <link rel="self" href="https://wang19ccn.github.io/atom.xml"/>
@@ -11,12 +11,14 @@
     <icon>https://wang19ccn.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, April</rights>
     <entry>
-        <title type="html"><![CDATA[CURL常用命令]]></title>
+        <title type="html"><![CDATA[CURL教程和常用命令]]></title>
         <id>https://wang19ccn.github.io/post/curl-chang-yong-ming-ling/</id>
         <link href="https://wang19ccn.github.io/post/curl-chang-yong-ming-ling/">
         </link>
         <updated>2021-08-01T17:41:15.000Z</updated>
-        <content type="html"><![CDATA[<p>-a/--append 上传文件时，附加到目标文件<br>
+        <content type="html"><![CDATA[<p>教程：http://www.ruanyifeng.com/blog/2019/09/curl-reference.html</p>
+<p>常用命令：<br>
+-a/--append 上传文件时，附加到目标文件<br>
 -A/--user-agent <string>  设置用户代理发送给服务器</p>
 <ul>
 <li>anyauth   可以使用“任何”身份验证方法<br>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang19ccn.github.io/</id>
     <title>April</title>
-    <updated>2021-08-01T17:44:59.161Z</updated>
+    <updated>2021-08-01T19:10:27.708Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang19ccn.github.io/"/>
     <link rel="self" href="https://wang19ccn.github.io/atom.xml"/>
@@ -210,7 +210,7 @@ https://blog.csdn.net/cysear/article/details/80435756</p>
 <ul>
 <li>在工作</li>
 </ul>
-<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210801184050860.png" alt="image-20210801184050860" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://wang19ccn.github.io//post-images/1627844993867.png" alt="" loading="lazy"></figure>
 <h3 id="四-创建本地仓库与提交文件">四、创建本地仓库与提交文件</h3>
 <h5 id="初始化本地仓库">初始化本地仓库</h5>
 <p><code>git init</code> 初始化仓库</p>
@@ -262,6 +262,94 @@ https://blog.csdn.net/cysear/article/details/80435756</p>
 <p><code>git reflog</code> 查看所有操作历史记录</p>
 </li>
 </ol>
+<h3 id="七-文件删除">七、文件删除</h3>
+<h5 id="手动删除工作区文件会被git视为一种操作">手动删除工作区文件（会被git视为一种操作）</h5>
+<p><code>git ls-files</code> 查看工作区文件</p>
+<p><code>git checkout &lt;文件名&gt;</code>  恢复文件</p>
+<h5 id="rm指令删除会同时删除git仓库和工作区">rm指令删除（会同时删除git仓库和工作区）</h5>
+<p><code>git rm &lt;文件名&gt;</code></p>
+<h3 id="八-远程仓库">八、远程仓库</h3>
+<p><strong>Github/码云</strong> 开源远程仓库</p>
+<p><strong>GitLab</strong> 企业搭建内部远程仓库</p>
+<h3 id="九-ssh下载项目">九、SSH下载项目</h3>
+<p>ssh更加安全和下载效率高</p>
+<p>public key 看公司生成方法</p>
+<h3 id="十-远程仓库推送">十、远程仓库推送</h3>
+<p><code>git remote add origin &lt;地址&gt;</code></p>
+<p><code>git push -u origin master</code></p>
+<p>绑定只做一次，之后git push即可</p>
+<h3 id="十一-本地分支操作">十一、本地分支操作</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git checkout branch</code></td>
+<td>切换到指定分支</td>
+</tr>
+<tr>
+<td><code>git checkout -b new_branch</code></td>
+<td>新建分支并切换到新建分支</td>
+</tr>
+<tr>
+<td><code>git branch -d|-D branch</code></td>
+<td>删除指定分支 -D强制删除</td>
+</tr>
+<tr>
+<td><code>git branch</code></td>
+<td>查看所有分支，并用 * 号标记当前所在分支</td>
+</tr>
+<tr>
+<td><code>git merge branch</code></td>
+<td>合并分支**（务必切换到主干上在合并分支）**</td>
+</tr>
+<tr>
+<td><code>git branch -m|-M oldbranch newbranch</code></td>
+<td>重命名分支，如果newbranch名字分支已经存在，则需要使用-M强制重新命名，否则-m进行重命名</td>
+</tr>
+</tbody>
+</table>
+<h3 id="十二-远程分支操作">十二、远程分支操作</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git branch -a</code></td>
+<td>查看本地与远程分支</td>
+</tr>
+<tr>
+<td><code>git push origin branch_name</code></td>
+<td>推送本地分支到远程</td>
+</tr>
+<tr>
+<td><code>git push origin :remote_branch</code></td>
+<td>删除远程分支（本地分支还在保留）</td>
+</tr>
+<tr>
+<td><code>git checkout -b local_branch origin/remote_branch</code></td>
+<td>拉取远程指定分支并在本地创建分支</td>
+</tr>
+</tbody>
+</table>
+<p>git fetch 获取远程仓库最新状态</p>
+<h3 id="十三-分支冲突解决">十三、分支冲突解决</h3>
+<p>同一个文件同一行出现问题，直接修改文件，重新提交</p>
+<h3 id="十四-多人协同冲突解决">十四、多人协同冲突解决</h3>
+<p>同上，在推送前，先git pull</p>
+<h3 id="十五-标签管理">十五、标签管理</h3>
+<p>git tag tag_name</p>
+<p>git tag -a tag_name -m 'xxx'</p>
+<p>一些文档地址</p>
+<p>[gitk - <a href="https://www.php.cn/manual/view/35079.html"> Git中文开发手册 ] (php.cn)</a></p>
 ]]></content>
     </entry>
     <entry>

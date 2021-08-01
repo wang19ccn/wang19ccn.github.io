@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang19ccn.github.io/</id>
     <title>April</title>
-    <updated>2021-08-01T17:40:31.844Z</updated>
+    <updated>2021-08-01T17:41:52.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang19ccn.github.io/"/>
     <link rel="self" href="https://wang19ccn.github.io/atom.xml"/>
@@ -10,6 +10,129 @@
     <logo>https://wang19ccn.github.io/images/avatar.png</logo>
     <icon>https://wang19ccn.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, April</rights>
+    <entry>
+        <title type="html"><![CDATA[CURL常用命令]]></title>
+        <id>https://wang19ccn.github.io/post/curl-chang-yong-ming-ling/</id>
+        <link href="https://wang19ccn.github.io/post/curl-chang-yong-ming-ling/">
+        </link>
+        <updated>2021-08-01T17:41:15.000Z</updated>
+        <content type="html"><![CDATA[<p>-a/--append 上传文件时，附加到目标文件<br>
+-A/--user-agent <string>  设置用户代理发送给服务器</p>
+<ul>
+<li>anyauth   可以使用“任何”身份验证方法<br>
+-b/--cookie &lt;name=string/file&gt; cookie字符串或文件读取位置</li>
+<li>basic 使用HTTP基本验证<br>
+-B/--use-ascii 使用ASCII /文本传输<br>
+-c/--cookie-jar <file> 操作结束后把cookie写入到这个文件中<br>
+-C/--continue-at <offset>  断点续转<br>
+-d/--data <data>   HTTP POST方式传送数据<br>
+--data-ascii <data>  以ascii的方式post数据<br>
+--data-binary <data> 以二进制的方式post数据<br>
+--negotiate     使用HTTP身份验证<br>
+--digest        使用数字身份验证<br>
+--disable-eprt  禁止使用EPRT或LPRT<br>
+--disable-epsv  禁止使用EPSV<br>
+-D/--dump-header <file> 把header信息写入到该文件中<br>
+--egd-file <file> 为随机数据(SSL)设置EGD socket路径<br>
+--tcp-nodelay   使用TCP_NODELAY选项<br>
+-e/--referer 来源网址<br>
+-E/--cert &lt;cert[:passwd]&gt; 客户端证书文件和密码 (SSL)<br>
+--cert-type <type> 证书文件类型 (DER/PEM/ENG) (SSL)<br>
+--key <key>     私钥文件名 (SSL)<br>
+--key-type <type> 私钥文件类型 (DER/PEM/ENG) (SSL)<br>
+--pass  <pass>  私钥密码 (SSL)<br>
+--engine <eng>  加密引擎使用 (SSL). &quot;--engine list&quot; for list<br>
+--cacert <file> CA证书 (SSL)<br>
+--capath <directory> CA目录 (made using c_rehash) to verify peer against (SSL)<br>
+--ciphers <list>  SSL密码<br>
+--compressed    要求返回是压缩的形势 (using deflate or gzip)<br>
+--connect-timeout <seconds> 设置最大请求时间<br>
+--create-dirs   建立本地目录的目录层次结构<br>
+--crlf          上传是把LF转变成CRLF<br>
+-f/--fail          连接失败时不显示http错误<br>
+--ftp-create-dirs 如果远程目录不存在，创建远程目录<br>
+--ftp-method [multicwd/nocwd/singlecwd] 控制CWD的使用<br>
+--ftp-pasv      使用 PASV/EPSV 代替端口<br>
+--ftp-skip-pasv-ip 使用PASV的时候,忽略该IP地址<br>
+--ftp-ssl       尝试用 SSL/TLS 来进行ftp数据传输<br>
+--ftp-ssl-reqd  要求用 SSL/TLS 来进行ftp数据传输<br>
+-F/--form &lt;name=content&gt; 模拟http表单提交数据<br>
+-form-string &lt;name=string&gt; 模拟http表单提交数据<br>
+-g/--globoff 禁用网址序列和范围使用{}和[]<br>
+-G/--get 以get的方式来发送数据<br>
+-h/--help 帮助<br>
+-H/--header <line>自定义头信息传递给服务器<br>
+--ignore-content-length  忽略的HTTP头信息的长度<br>
+-i/--include 输出时包括protocol头信息<br>
+-I/--head  只显示文档信息<br>
+从文件中读取-j/--junk-session-cookies忽略会话Cookie</li>
+<li>界面<interface>指定网络接口/地址使用</li>
+<li>krb4 &lt;级别&gt;启用与指定的安全级别krb4<br>
+-j/--junk-session-cookies 读取文件进忽略session cookie<br>
+--interface <interface> 使用指定网络接口/地址<br>
+--krb4 <level>  使用指定安全级别的krb4<br>
+-k/--insecure 允许不使用证书到SSL站点<br>
+-K/--config  指定的配置文件读取<br>
+-l/--list-only 列出ftp目录下的文件名称<br>
+--limit-rate <rate> 设置传输速度<br>
+--local-port<NUM> 强制使用本地端口号<br>
+-m/--max-time <seconds> 设置最大传输时间<br>
+--max-redirs <num> 设置最大读取的目录数<br>
+--max-filesize <bytes> 设置最大下载的文件总量<br>
+-M/--manual  显示全手动<br>
+-n/--netrc 从netrc文件中读取用户名和密码<br>
+--netrc-optional 使用 .netrc 或者 URL来覆盖-n<br>
+--ntlm          使用 HTTP NTLM 身份验证<br>
+-N/--no-buffer 禁用缓冲输出<br>
+-o/--output 把输出写到该文件中<br>
+-O/--remote-name 把输出写到该文件中，保留远程文件的文件名<br>
+-p/--proxytunnel   使用HTTP代理<br>
+--proxy-anyauth 选择任一代理身份验证方法<br>
+--proxy-basic   在代理上使用基本身份验证<br>
+--proxy-digest  在代理上使用数字身份验证<br>
+--proxy-ntlm    在代理上使用ntlm身份验证<br>
+-P/--ftp-port <address> 使用端口地址，而不是使用PASV<br>
+-Q/--quote <cmd>文件传输前，发送命令到服务器<br>
+-r/--range <range>检索来自HTTP/1.1或FTP服务器字节范围<br>
+--range-file 读取（SSL）的随机文件<br>
+-R/--remote-time   在本地生成文件时，保留远程文件时间<br>
+--retry <num>   传输出现问题时，重试的次数<br>
+--retry-delay <seconds>  传输出现问题时，设置重试间隔时间<br>
+--retry-max-time <seconds> 传输出现问题时，设置最大重试时间<br>
+-s/--silent静音模式。不输出任何东西<br>
+-S/--show-error   显示错误<br>
+--socks4 &lt;host[:port]&gt; 用socks4代理给定主机和端口<br>
+--socks5 &lt;host[:port]&gt; 用socks5代理给定主机和端口<br>
+--stderr <file><br>
+-t/--telnet-option &lt;OPT=val&gt; Telnet选项设置<br>
+--trace <file>  对指定文件进行debug<br>
+--trace-ascii <file> Like --跟踪但没有hex输出<br>
+--trace-time    跟踪/详细输出时，添加时间戳<br>
+-T/--upload-file <file> 上传文件<br>
+--url <URL>     Spet URL to work with<br>
+-u/--user &lt;user[:password]&gt;设置服务器的用户和密码<br>
+-U/--proxy-user &lt;user[:password]&gt;设置代理用户名和密码<br>
+-v/--verbose<br>
+-V/--version 显示版本信息<br>
+-w/--write-out [format]什么输出完成后<br>
+-x/--proxy &lt;host[:port]&gt;在给定的端口上使用HTTP代理<br>
+-X/--request <command>指定什么命令<br>
+-y/--speed-time 放弃限速所要的时间。默认为30<br>
+-Y/--speed-limit 停止传输速度的限制，速度时间'秒<br>
+-z/--time-cond  传送时间设置<br>
+-0/--http1.0  使用HTTP 1.0<br>
+-1/--tlsv1  使用TLSv1（SSL）<br>
+-2/--sslv2 使用SSLv2的（SSL）<br>
+-3/--sslv3         使用的SSLv3（SSL）<br>
+--3p-quote      like -Q for the source URL for 3rd party transfer<br>
+--3p-url        使用url，进行第三方传送<br>
+--3p-user       使用用户名和密码，进行第三方传送<br>
+-4/--ipv4   使用IP4<br>
+-6/--ipv6   使用IP6<br>
+-#/--progress-bar 用进度条显示当前的传送状态</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[正则匹配标点符号]]></title>
         <id>https://wang19ccn.github.io/post/zheng-ze-pi-pei-biao-dian-fu-hao/</id>
